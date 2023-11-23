@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLservices</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="header">
+        <!-- < class="container"> -->
+            <nav>
+                <img src="pics/logon.png" alt="myname" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=' fas bx bx-x' onclick="closemenu()"></i>
+                </ul>
+                <i class=' fas bx bx-menu' onclick="openmenu()" ></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Database Admin</p>
+                <p>Network Engineer</p>
+                <p>Data Analyst</p>
+                <!-- <h1>Hi,<div class="text"></div></h1> -->
+                <!-- <h1 class="text">Hi, I'm <span >Junior Ludima</span>  <br> A Freelance Developer</h1> -->
+            </div>
+<div>
+    <h1>Hi,<span class="auto-play" ></span> </h1>
+</div>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed (".auto-play",{
+        strings : ["I'm Junior Ludima","I'm a Freelance Developer","And an IT Network Support officer"],
+        typeSpeed: 200,
+        backSpeed : 250,
+        loop : true
+    })
+</script>
+<style>
+     .auto-play
+     {font-family:'Times New Roman', Times, serif;
+        font-size: 40px;
+    font-weight: 500;
+    /* line-height: 90px; */
+    /* max-width: 80px; */
+    color: #ff004f;
+    }
+</style>
+        </div>
+
+    </div>
+    <!-- -------------about------------ --> 
+    <div id="about">
+<div class="container" >
+    <div class="row">
+        <div class="about-col1">
+            <img src="pics/jr1.JPG" alt="juniorludima">
+        </div>
+        <div class="about-col2"><h1 class="sub-title">About Me</h1>
+            <p>I'm Junior Ludima Onakoy,student at Jomo Kenyatta University of Agriculture and technology,
+                I'm currently pursuing Bachelor of Engineering in Information Technoloy from Jomo Kenyatta University of Agriculture and Technology(JKUAT).
+                I can work in  different filds such as : Data Analyses, Database Management System, Web Development And Computer Network.
+                I'm also passionate about technology and I'm always looking for new opportunities. I can work for an information technology company that other individuals 
+                or businesses use to manage their web and software needs. Or as part of an in-house IT Department at a larger company to  maintain internet connectivity,
+                Backup Information, troubleshooting problems, monitor firewalls to protect sensitive information.
+            </p>
+                 <!-- -------------tab-links under about------------ --> 
+                <div class="tab-title">
+                     <!-- -------------onclick function under javascript------------ -->
+                    <p class="tab-links active-link"  onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                 <!-- -------------first tab-contents under about : skills------------ --> 
+                <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Database admin</span><br>Designing Database</li>
+                    <li><span>Data Analyst</span><br>Analyzing Data</li>
+                    <li><span>Network Engineer</span><br>Implement The Computer Network</li>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                </ul>
+            </div> 
+             <!-- -------------second tab-contents under about: experience------------ --> 
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2020 - 2021</span><br>Internship at Office Congolais of Control</li>
+                    <li><span>2021 - 2022</span><br> Database Training </li>
+                    <li><span>2021 - 2022</span><br>Network Computer Training</li>
+                    <li><span>2020 - 2021</span><br>Internship at Office Congolais of Control</li>
+                    <li><span>2023 - 2024</span><br>Attachement at Amref </li>
+                </ul>
+            </div> 
+             <!-- -------------trhid tab-contents under about : education------------ --> 
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2019</span><br>College from ISIPA</li>
+                    <li><span>2020 </span><br>Training from CKalonda</li>
+                    <li><span>2021 - current</span><br>IT from JKUAT</li>
+                </ul>
+            </div> 
+        </div>
+                <!-- -------------End of tab-contents and sub=titles------------ --> 
+
+    </div>
+
+</div>
+    </div>
+    <!-- -------------services session ------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bxs-data'></i>
+                    <h2>Database Administraction</h2>
+                    <p>Database Administration refers to the whole set of activities
+                         performed by a database administrator to ensure that
+                         a database is always available as needed.</p>
+                         <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bx-code-block'></i>
+                    <h2>Data Analysis</h2>
+                    <p>Data Analysis refers to the process of inspecting, 
+                        cleaning, transforming, and interpreting data to discover valuable insights,
+                         draw conclusions, and support decision-making.</p>
+                         <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bx-code-alt' ></i>
+                    <h2> Web Development</h2>
+                    <p>Web Development refers to the process of creating
+                     an application that works over the internet i.e. websites. 
+                         It includes aspects such as web programming and database management. </p>
+                         <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class='bx bx-planet'></i>
+                    <h2>Computer Network </h2>
+                    <p>A computer Network is a system that connects two or more 
+                        computing devices for transmitting and sharing information.
+                         These devices can be connected using physical wires
+                        or wireless.</p>
+                         <a href="#">Learn More</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+     <!-- -------------start with portfolio------------ -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                 <!-- -1 images- -->
+                <div class="work">
+                    <img src="pics/db4.jpg" alt="database">
+                    <!-- -text over image- -->
+                    <div class="layer">
+                        <h3> Database Admin</h3>
+                        <p>A database Admin is responsible for maintaining, 
+                            securing and operating databases and
+                             also ensures that data is correctly stored and retrieved. </p>
+                            <a href="#"><i class='bx bx-link'></i></a>
+                    </div>
+
+                </div>
+                 <!-- -2 images- -->
+                <div class="work">
+
+                    <img src="pics/dataana1.webp" alt="data-analysis">
+                    <!-- -text over image- -->
+                    <div class="layer">
+                        <h3>Data Analyst</h3>
+                        <p>A Data Analyst identify, collects, cleans and interprets datasets
+                             in order to answer a question or solve a problem</p>
+                            <a href="#"><i class='bx bx-link'></i></a>
+                    </div>
+
+                </div>
+                 <!-- -3 images- -->
+                <div class="work">
+                    <img src="pics/web4.webp" alt="web dev">
+                    <!-- -text over image- -->
+                    <div class="layer">
+                        <h3>Web Developer</h3>
+                        <p>A web Developer is responsible for the design and construction of websites.
+                             we ensure that sites meet user expectations and
+                              offer easy access points with no loading issues.</p>
+                            <a href="#"><i class='bx bx-link'></i></a>
+                    </div>
+
+                </div>
+                 <!-- -4 images- -->
+                <div class="work">
+                    <img src="pics/net2.jpg" alt="network">
+                    <!-- -text over image- -->
+                    <div class="layer">
+                        <h3>Network Engineer</h3>
+                        <p>is a technology professional who has the necessary skills to plan,
+                             implement and oversee the computer networks</p>
+                            <a href="#"><i class='bx bx-link'></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn">24H/7 </a>
+        </div>
+     </div>
+     <!-- -------------start with contact------------ -->
+     <div id="contact">
+        <div class="conatainer">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class='bx bxs-navigation'></i>Ludimajunior@Gmail.com</p>
+                    <p><i class='bx bxs-phone-call'></i>+254717718388</p>
+                    <div class="social-icon">
+                        <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                       <a href=""> <i class='bx bxl-linkedin-square'></i></a>
+                        <a href="#"><i class='bx bxl-whatsapp-square'></i></a>
+                    </div>
+                    <a href="CVludima.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-righ">
+                    <form method="post" action="connect.php">
+                        <input id="names" type="text" name="name" placeholder="your Name" autocomplete="off" required>
+                        <input id="emails" type="email" name="email" placeholder="your Email" autocomplete="off" required>
+                        <textarea id="messages" type="text" name="Message"   rows="6" placeholder="your Message"  required></textarea>
+                        <button name="submit-form" type="submit" class="btn btn2"> Submit</button>
+                        <span class="msg"></span>
+                    </form>
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class="copy">
+            <p>Copyright ©  JuniorLudima. All property recerved 2023<i class='bx bxs-heart'></i>  </p>
+
+        </div>
+        
+     </div>
+   
+     <!-- -------------start with javascript------------ -->
+    <script>
+        // declare two variables 
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        //define the function with the onclick function whiche is called opentab
+        function opentab(tabname){
+            // to make the skills invisible once clicked with remove method
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            // to make the skills invisible once clicked with remove method
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            // display the color of experience and education once clicked
+            event.currentTarget.classList.add("active-link");
+            // display the content of experience and education once clicked
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+   <!-- <script>
+/* ----- TYPING EFFECT ----- */
+const div  = document.querySelector(".text");
+const text = " I'm Junior Ludima, A Freelance Developer";
+function textTypingEffect(element, text, i=0){
+    if (i ===0){
+        element.textContent = "";
+    }
+    element.textContent += text[i];
+    // if we reached the end of the string (text)
+    if (i === text.length -1){
+        return;
+    }
+    setTimeout(() => textTypingEffect(element, text, i + 1), 40);
+}
+textTypingEffect(div, text)
+</script> -->
+
+    <script>
+           // display and close menu on a small screen sush phone
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
